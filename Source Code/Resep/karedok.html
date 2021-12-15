@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ganti title nya dengan nama masakannya -->
+    <title>Karedok</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="Sidebar/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+</head>
+<body style="background-color: rgb(235, 235, 235);">
+
+   <!-- Sidebar --> 
+
+   <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="p-4 pt-5">
+          <a href="#" class="img logo rounded-circle mb-3" style="background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png);"></a>
+          <center><span><b>Tamu</b></span></center>
+          <ul class="list-unstyled components mb-5 mt-3">
+            <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">List Makanan</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li class="active">
+                <a href="listmakanan1.php">Masakan Sumatera dan Jawa</a>
+              </li>
+              <li>
+                <a href="listmakanan2.php">Masakan Kalimantan dan Sulawesi</a>
+              </li>
+              <li>
+                <a href="listmakanan3.php">Masakan Maluku dan Papua</a>
+              </li>
+            </ul>
+            </li>
+            <li>
+              <a href="../Profil/tentangkami.html">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Akun</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a href="../Akun/login.php">Masuk</a>
+              </li>
+              <li>
+                <a href="../Akun/register.html">Mendaftar</a>
+              </li>
+              </ul>
+            </li>
+            <li>
+              <a class="disabled">Hubungi Kami</a>
+            </li>
+            <li>
+              <a href="../Saran/saran.html">Saran dan Kritikan</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+
+    <div id="content" class="p-4 p-md-5">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Halaman Utama</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Profil/tentangkami.html">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Hubungi</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+
+    <!-- Judul dan Gambar -->
+
+    <div class="container">
+      <div class="row mb-4" style="text-align:center;">
+          <h1 style="font-family: 'Lobster', cursive;">KAREDOK</h1>
+          <br>
+          <h3 style="font-family: 'Lobster', cursive;">RESEP MAKANAN KHAS YANG BERASAL DARI PROVINSI JAWA BARAT</h3>
+      </div>
+
+      <div class="image">
+          <!-- Gambarnya diletak di folder sesuai dengan asal pulaunya. Ukurannya di resize menjadi 700 x 465 biar pas dengan templatenya jadi width sama height nya gausah diubah lagi -->
+          <img src="Gambar/Jawa/karedok.jpg" alt="Karedok" width="1150" height="auto" class="img-fluid">
+      </div>        
+    </div>
+    <br>
+        
+    <!-- Isi Konten -->
+
+    <section id="ingredients" class="ingredients-container document-section">
+        <div class="row">
+          <div class="col mt-2">
+            <h2 class="text" style="font-family: 'Lobster', cursive; margin-bottom: 20px;">Bahan-bahan :</h2>
+            <ul type="disc">
+              <li><h5>Tauge, cuci bersih - 50 gram</h5></li>
+              <li><h5>Kacang panjang, cuci bersih dan iris kecil - 50 gram</h5></li>
+              <li><h5>Kol, cuci bersih dan iris halus - 50 gram</h5></li>
+              <li><h5>Daun kemangi, cuci bersih - 50 gram</h5></li>
+              <li><h5>Terong bulat hijau, cuci bersih dan iris tipis - 2 buah</h5></li>
+              <li><h5>Ketimun, cuci bersih dan iris kotak tipis - 1 buah</h5></li>
+              <li><h5>Kacang tanah, goreng - 150 gram</h5></li>
+              <li><h5>Gula merah - 50 gram</h5></li>
+              <li><h5>Bawang putih - 1 siung</h5></li>
+              <li><h5>Cabe rawit merah - 2 buah</h5></li>
+              <li><h5>Kencur - 4 cm</h5></li>
+              <li><h5>Terasi, bakar - 1/2 sdt</h5></li>
+              <li><h5>Air asam jawa - 2 sdm</h5></li>
+              <li><h5>Garam - 1 sdt</h5></li>
+              <li><h5>Air - 75 ml</h5></li>
+            </ul>
+          </div>
+          <div class="col mt-2">
+            <h2 class="text" style="font-family: 'Lobster', cursive; margin-bottom: 20px;">Langkahnya :</h2>
+            <ul type="circle">
+            <li><h5>Dalam satu wadah besar, siapkan bumbu halus. Campur dengan air dan aduk hingga jadi pasta.</h5></li>
+            <li><h5>Masukkan semua sayuran. Aduk hingga rata.</h5></li>
+            <li><h5>Tambahkan perasan jeruk limau (opsional)</h5></li>
+            </ul>         
+          </div>
+        </div>    
+    </section>
+    <br>
+
+    <!-- Kolom Komentar -->
+
+    <div class="component-wrapper section">
+      <div class="container">
+        <center><img src="Gambar/Homepage/logo.jpg" alt="Situs Kelompok 4" width="20%" height="auto"></center>
+      <br>
+      <h6>Silahkan Berkomentar</h6>
+          <hr>
+          <form>
+            <table>
+                <tr width="100%" height="auto">
+                  <td><textarea cols="40" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                  <td><input type="submit" value="Postkan Komentar" onclick="alert('Kamu belum login. Login dulu dong')"></td>
+                </tr>
+            </table>
+          </form>    
+      </div>
+      <br><br>
+
+    <!-- Login dan Sebagainya -->
+
+    <center><h3 style="font-family: 'Lobster', cursive;">Resep Lainnya :</h3></center>
+    <div class="row">
+      <div class="col">
+          <div class="card-deck">
+            <div class="card mb-4">
+              <a href="keraktelor.html"><img src="Gambar/Homepage/keraktelor.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                  <h4 class="card-title" style="font-family: 'Lobster', cursive;">Kerak Telor</h4>
+                  <p class="card-text">Siapa sih yang tidak tahu makanan khas Betawi ini</p>
+                  <p class="card-text"><small class="text-muted">Diposting 2 Menit yang Lalu</small></p>
+                  <a class="btn btn-success" href="keraktelor.html" role="button">Resepnya...</a>
+              </div>
+              </div>
+              <div class="card mb-4">
+                <a href="pendap.html"><img src="Gambar/Homepage/pendap.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                  <h4 class="card-title" style="font-family: 'Lobster', cursive;">Pendap</h4>
+                  <p class="card-text">Makanan favorite masyarakat Bengkulu </p>
+                  <p class="card-text"><small class="text-muted">Diposting 5 Hari yang Lalu</small></p>
+                  <a class="btn btn-success" href="pendap.html" role="button">Resepnya...</a>
+              </div>
+              </div>
+              <div class="card mb-4">
+                <a href="papeda.html"><img src="Gambar/Homepage/papeda.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                  <h4 class="card-title" style="font-family: 'Lobster', cursive;">Papeda</h4>
+                  <p class="card-text">Bagi para pecinta sagu tentu ini menjadi favorit</p>
+                  <p class="card-text"><small class="text-muted">Diposting 1 Minggu yang Lalu</small></p>
+                  <a class="btn btn-success" href="papeda.html" role="button">Resepnya...</a>
+              </div>
+              </div>
+              </div>
+            </div>
+        </div>
+    
+      </div>
+    </div>
+    </div>
+    
+
+    <!-- Footer -->
+
+    <section style="background-color: #000000;">
+      <div style="background-color: #ff9900;">
+        <div class="container">
+          <div class="row py-4 d-flex align-items-center">
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0" style="color: white;">
+              <h6 class="mb-0">Ayo bergabung dengan media sosial kami</h6>
+            </div>
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <a class="tw-ic">
+                <i class="fab fa-twitter white-text mr-4"> </i>
+              </a>
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g white-text mr-4"> </i>
+              </a>
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in white-text mr-4"> </i>
+              </a>
+              <a class="ins-ic">
+                <i class="fab fa-instagram white-text"> </i>
+              </a>
+            </div>      
+          </div>      
+        </div>
+      </div>
+      <div class="container text-center text-md-left mt-5" style="color: white;">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Tugas Akhir Kelompok 4</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>Kami dengan bangga mempersembahkan hasil dari kerja kami berupa web resep makanan. Mohon maaf jika ada kesalahan dalam penulisan dan kesalahan lainnya. Terima kasih</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Resep</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a href="../Resep/listmakanan.php">Makanan Tradisional</a>
+            </p>
+            <p>
+              <a href="#!" class="disabled">Makanan Modern<br>( Dalam Pengerjaan )</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Link Singkat</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a href="../Akun/login.php">Login</a>
+            </p>
+            <p>
+              <a href="../Saran/saran.html">Kolom Saran</a>
+            </p>
+            <p>
+              <a class="disabled">Menjadi Distributor Resep</a>
+            </p>
+            <p>
+              <a class="disabled">Bantuan</a>
+            </p>  
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold">Kontak</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fas fa-home mr-3"></i> Medan, USU Fasilkom TI, Teknologi Informasi</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> Kelompok4tubes@gmail.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 62 812 3456 7890</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <a href="../index.html"> Kelompok 4 Tubes Pemrograman Web</a>
+      </div>
+  </section>
+
+    <!-- Script -->
+
+    <script src="Sidebar/js/jquery.min.js"></script>
+    <script src="Sidebar/js/popper.js"></script>
+    <script src="Sidebar/js/bootstrap.min.js"></script>
+    <script src="Sidebar/js/main.js"></script>
+    <script src="js/bootstrap.js"></script>
+  
+</body>
+</html>
