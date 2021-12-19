@@ -20,13 +20,20 @@
         <?php
             
             $username = $_POST['username'];
-            $password = $_POST['password'];
+            $password1 = $_POST['password1'];
+	    $password2 = $_POST['password2']
             $nama = $_POST['nama'];
             $email = $_POST['email'];
             $level = $_POST['level'];
 
             $cekdulu = "select * from akun where username='$_POST[username]'";
             $prosescek = mysqli_query($koneksi, $cekdulu);
+	    
+	    if (empty($_POST['password1']) || empty($_POST['password2'])) {
+        	echo "<script>alert('Password Kosong.');history.go(-1) </script>";    
+    	    } else if (($_POST['password1']) != ($_POST['password2'])) {
+        	echo "<script>alert('Konfimasi Password Berbeda');history.go(-1) </script>";    
+    	    }
     
             if (mysqli_num_rows($prosescek)>0) { 
                 echo "<script>alert('Username Sudah Digunakan / Data Ganda');history.go(-1) </script>";
